@@ -1,0 +1,6 @@
+.Health
+.x
+.y
+.Distance
+.Probability
+.TimeSee 

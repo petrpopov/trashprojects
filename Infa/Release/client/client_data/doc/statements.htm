@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<table width="95%" border="1" align="center">
+  <tr>
+    <td colspan="4">      <h3 align="center">Statements</h3></td></tr>
+  <tr>
+    <td><div align="center"><a href="general.htm">What is NPRG?</a></div></td>
+    <td><div align="center"><a href="control.htm">Controlling your robot</a></div></td>
+    <td><div align="center"><a href="language.htm">Language overview</a></div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">
+      <p>&nbsp;</p>
+      <table width="100%" border="0">
+        <tr>
+          <td width="16%"><div align="center"><a href="statements.htm">Conditions</a></div></td>
+          <td width="27%"><div align="center"><a href="lowlevel.htm">Lowlevel Commands</a></div></td>
+          <td width="27%"><div align="center"><a href="highlevel.htm">Highlevel Commands </a></div></td>
+          <td width="15%"><div align="center"><a href="properties.htm">Properties</a></div></td>
+          <td width="15%"><div align="center"><a href="examples.htm">Examples</a></div></td>
+        </tr>
+      </table>
+    </div>
+      <blockquote>
+        <div align="justify">
+          <p>When setting conditions you may use logical operators &quot;and&quot;, &quot;or&quot;, &quot;not&quot; and nested bracket expressions. You may also use the comparison operators &lt;,&gt; and =. Here are the functions that may be applied to in conditions: </p>
+          <ul>
+            <li><a href="cango.htm">CanGoForward</a></li>
+            <li><a href="cango.htm">CanGoLeft</a></li>
+            <li><a href="cango.htm">CanGoRight</a></li>
+            <li><a href="cango.htm">CanGoBack</a></li>
+            <li><a href="cango.htm">IsAvailablePoint (x, y)</a></li>
+            <li><a href="finish.htm">FinishIsKnown</a></li>
+            <li><a href="waypoint.htm">IsDefinedWaypoint</a></li>
+            <li><a href="waypointex.htm">WaypointExists (line1, line2) </a></li>
+          </ul>
+        <p>It is also possible to use expressions of comparing different <a href="properties.htm">properties</a> (your robot's, enemies' robots', known map's) between each other and with integer numbers. </p>
+        <p>Here is an example of a correct condition:</p>
+        <blockquote>
+          <p>if ( not (CanGoForward or CanGoBack) and (Enemies.Number &gt; 0) and (My.Health &lt; Target.Health) ) { actions } </p>
+        </blockquote>
+        </div>
+      </blockquote>
+      
+        <p align="justify">&nbsp;</p></td>
+  </tr>
+</table>
+</body>
+</html>

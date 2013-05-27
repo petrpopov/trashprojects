@@ -1,0 +1,45 @@
+if(My.Health <= 50){
+	SetDriveMode(carefull)
+}
+
+If(not CanGoLeft and CanGoForward){
+	Step
+}
+
+If(not CanGoLeft and not CanGoForward and CanGoRight){
+	TurnRight
+	Step
+}
+
+If(not CanGoLeft and not CanGoForward and not CanGoRight){
+	TurnRight
+	TurnRight
+	Step
+}
+
+If(CanGoLeft and not IsAvailablePoint(-1,-1)){
+	TurnLeft
+	Step
+}
+
+If(CanGoLeft and CanGoRight and CanGoForward and CanGoBack){
+	Step
+}
+
+If(CanGoleft and not CanGoForward){
+	TurnRight
+	Step
+}
+
+If(CanGoLeft and not CanGoBack){
+	TurnLeft
+	Step
+}
+
+If(CanGoLeft and not CanGoRight){
+	TurnRight
+	TurnRight
+	Step
+}
+
+Stop

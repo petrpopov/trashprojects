@@ -1,0 +1,13 @@
+if(My.Health < 50){
+	SetDriveMode(carefull)
+}
+
+if(FinishIsKnown){
+	GoToFinish
+}
+
+SetWaypointsPriority(waypoints.MaxDist - Waypoint.Distance)
+GetWaypoint
+GoToWaypoint
+
+Stop

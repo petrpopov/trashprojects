@@ -1,0 +1,30 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.59)
+AC_INIT(src/main.cpp)
+AM_INIT_AUTOMAKE(pkeeper, 0.1.1802)
+AC_CONFIG_SRCDIR([src/main.cpp])
+AC_CONFIG_HEADER([config.h])
+
+# Checks for programs.
+AC_PROG_CXX
+AC_PROG_AWK
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+
+# Checks for libraries.
+AC_HAVE_LIBRARY(Xext)
+AC_HAVE_LIBRARY(X11)
+AC_HAVE_LIBRARY(m)
+AC_PATH_QT
+# Checks for header files.
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+AC_OUTPUT(Makefile src/Makefile)

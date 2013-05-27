@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="fractal"
+	ProjectGUID="{97B91C07-A59D-3439-92E4-EE8F5B4ABCAE}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			ConfigurationType="1"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories=".,$(QTDIR)\include,F:\fractal,F:\Qt\3.3.3\mkspecs\win32-msvc.net"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation=".\"
+				BufferSecurityCheck="FALSE"
+				DebugInformationFormat="0"
+				ExceptionHandling="FALSE"
+				GeneratePreprocessedFile="0"
+				ObjectFile=".\"
+				Optimization ="1"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_DLL,QT_THREAD_SUPPORT,NDEBUG"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				SuppressStartupBanner="TRUE"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt333.lib qtmain.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				DelayLoadDLLs="comdlg32.dll,oleaut32.dll,winmm.dll,wsock32.dll,winspool.dll"
+				GenerateDebugInformation="FALSE"
+				IgnoreImportLibrary="TRUE"
+				OutputFile=".\fractal.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="."
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			ConfigurationType="1"
+			IntermediateDirectory="Debug\"
+			UseOfMfc="0">
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalIncludeDirectories=".,$(QTDIR)\include,F:\fractal,F:\Qt\3.3.3\mkspecs\win32-msvc.net"
+				AdditionalOptions="-Zm200 -w34100 -w34189"
+				AssemblerListingLocation="Debug\"
+				BufferSecurityCheck="FALSE"
+				DebugInformationFormat="3"
+				ExceptionHandling="FALSE"
+				GeneratePreprocessedFile="0"
+				MinimalRebuild="TRUE"
+				ObjectFile="Debug\"
+				Optimization ="1"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_DLL,QT_THREAD_SUPPORT"
+				ProgramDataBaseFileName=".\"
+				RuntimeLibrary="2"
+				SuppressStartupBanner="TRUE"
+				WarningLevel="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				AdditionalDependencies="qt-mt333.lib qtmain.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib imm32.lib winmm.lib wsock32.lib winspool.lib delayimp.lib"
+				AdditionalLibraryDirectories="$(QTDIR)\lib"
+				GenerateDebugInformation="TRUE"
+				IgnoreImportLibrary="TRUE"
+				OutputFile="Debug\\fractal.exe"
+				ProgramDatabaseFile=""
+				SubSystem="2"
+				SuppressStartupBanner="TRUE"/>
+			<Tool
+				Name="VCMIDLTool"
+				DefaultCharType="0"
+				EnableErrorChecks="1"
+				WarningLevel="0"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="itdialog.cpp">
+			</File>
+			<File
+				RelativePath="main.cpp">
+			</File>
+			<File
+				RelativePath="mainform.cpp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="itdialog.h">
+				<FileConfiguration
+					Name="Release|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe itdialog.h -o moc_itdialog.cpp"
+				Description="Moc&apos;ing itdialog.h..."
+				Outputs="moc_itdialog.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe itdialog.h -o moc_itdialog.cpp"
+				Description="Moc&apos;ing itdialog.h..."
+				Outputs="moc_itdialog.cpp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="mainform.h">
+				<FileConfiguration
+					Name="Release|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe mainform.h -o moc_mainform.cpp"
+				Description="Moc&apos;ing mainform.h..."
+				Outputs="moc_mainform.cpp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+			<Tool
+				Name="VCCustomBuildTool"
+				AdditionalDependencies="$(QTDIR)\bin\moc.exe"
+				CommandLine="$(QTDIR)\bin\moc.exe mainform.h -o moc_mainform.cpp"
+				Description="Moc&apos;ing mainform.h..."
+				Outputs="moc_mainform.cpp"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Generated MOC Files"
+			Filter="cpp;c;cxx;moc">
+			<File
+				RelativePath="moc_itdialog.cpp">
+			</File>
+			<File
+				RelativePath="moc_mainform.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

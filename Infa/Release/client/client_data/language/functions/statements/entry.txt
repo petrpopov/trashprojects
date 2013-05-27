@@ -1,0 +1,8 @@
+IsAvailablePoint(x, y)
+CanGoForward
+CanGoLeft
+CanGoRight
+CanGoBack
+IsDefinedWaypoint
+WaypointExists(line1, line2)
+FinishIsKnown

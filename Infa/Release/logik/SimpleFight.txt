@@ -1,0 +1,19 @@
+If ( Enemies.Number > 0 ) {
+	SetEnemiesPriority(Enemy.Health*Enemy.Probability)
+	GetTarget
+}
+
+If ( Target.Probability = 100 ) { Shoot }
+
+If ( Waypoints.Number > 0 ) {
+	SetWaypointsPriority(Waypoints.MaxDist - Waypoint.Distance)
+	GetWaypoint
+	GoToWaypoint
+}
+
+If ( CanGoForward ) { Step }
+If ( CanGoLeft ) { StepLeft }
+If ( CanGoRight ) { StepRight }
+If ( CanGoBack ) { StepBack }
+
+Stop

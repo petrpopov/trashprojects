@@ -1,0 +1,21 @@
+AC_INIT(configure.in)                                                                              
+AM_INIT_AUTOMAKE(hello, 1.0)                                                         
+
+AM_CONFIG_HEADER(config.h)                                                                         
+AM_MAINTAINER_MODE                                                                                 
+                                                                                                   
+AC_ISC_POSIX                                                                                       
+AC_PROG_CC   
+AC_PROG_CXX                                                                                      
+AM_PROG_CC_STDC                                                                                    
+AC_HEADER_STDC                                                                                     
+AC_PROG_RANLIB                                                                                     
+                                                                                                  
+AC_SUBST(QT_CFLAGS)                                                                               
+AC_SUBST(QT_LIBS)
+
+AC_PATH_QT
+#AC_PATH_QT_INC
+#AC_PATH_QT_LIB
+                                                                                                   
+AC_OUTPUT(Makefile)

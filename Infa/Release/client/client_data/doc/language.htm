@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<table width="95%" border="1" align="center">
+  <tr>
+    <td colspan="4">      <h3 align="center">Language
+    overview</h3></td></tr>
+  <tr>
+    <td><div align="center"><a href="general.htm">What is NPRG?</a></div></td>
+    <td><div align="center"><a href="control.htm">Controlling your robot</a></div></td>
+    <td><div align="center"><a href="language.htm">Language overview</a></div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">      
+      <p>&nbsp;</p>
+      <table width="100%" border="0">
+        <tr>
+          <td width="16%"><div align="center"><a href="statements.htm">Conditions</a></div></td>
+          <td width="27%"><div align="center"><a href="lowlevel.htm">Lowlevel Commands</a></div></td>
+          <td width="27%"><div align="center"><a href="highlevel.htm">Highlevel Commands </a></div></td>
+          <td width="15%"><div align="center"><a href="properties.htm">Properties</a></div></td>
+          <td width="15%"><div align="center"><a href="examples.htm">Examples</a></div></td>
+        </tr>
+      </table>
+    </div>
+      <blockquote>
+        <div align="justify">
+          <p>Robot logic(program) is a set of conditions and commands. On each turn robot analyses the situation and makes some actions according to it's program, until turn time runs out or robot reaches the end of his program.</p>
+          <p>Pay attention to the fact that the situation analysis goes each turn anew! And so, each turn the program runs from the very beginning!</p>
+          <p>Reactions of a robot for the changing situation can be assigned by means of condition blocks: </p>
+          <p>if ( condition1 ) {<br>
+            actions 1<br>
+            }elseif ( condition2 ){<br>
+            actions 2<br>
+            ...<br>
+            }elseif( conditionN ) {<br>
+            actions N<br>
+          }else {<br>
+          default actions<br>
+          }</p>
+          <p>Each such construction must start with an &quot;if&quot; keyword. Conditions are enclosed in round brackets, action blocks - in braces. Such construction may (unnecessarily) contain any number of alternative choice blocks &quot;elseif () {}&quot; and an &quot;else {}&quot; block. Only one block of this structure will be executed - the first one to have the right condition (or the &quot;else {}&quot; block if no conditions are right).</p>
+          <p>You can also use nested condition blocks.</p>
+          <p>The program should end with a &quot;stop&quot; keyword. You may also use the &quot;stop&quot; keyword if you need to stop the execution of the program in some situation.</p>
+          <p>You'll find more detailed information about all the language functions in the corresponding help sections.</p>
+          <p>Robot language is case-insensitive.</p>
+          <p>Program examples can be found <a href="examples.htm">here</a>.</p>
+        </div>
+      </blockquote>
+      
+        <p align="justify">&nbsp;</p></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.Distance
+.MinNewDist
+.MaxNewDist
+.AvgNewDist

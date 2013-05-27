@@ -1,0 +1,10 @@
+.HealthMin
+.HealthMax
+.HealthAvg
+.DistanceMin
+.DistanceMax
+.DistanceAvg
+.TimeSeeMin
+.TimeSeeMax
+.TimeSeeAvg
+.Number

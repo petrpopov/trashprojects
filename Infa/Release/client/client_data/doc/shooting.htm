@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<table width="95%" border="1" align="center">
+  <tr>
+    <td colspan="4">      <h3 align="center">Shooting</h3></td></tr>
+  <tr>
+    <td><div align="center"><a href="general.htm">What is NPRG?</a></div></td>
+    <td><div align="center"><a href="control.htm">Controlling your robot</a></div></td>
+    <td><div align="center"><a href="language.htm">Language overview</a></div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">
+      <p>&nbsp;</p>
+      <table width="100%" border="0">
+        <tr>
+          <td width="16%"><div align="center"><a href="statements.htm">Conditions</a></div></td>
+          <td width="27%"><div align="center"><a href="lowlevel.htm">Lowlevel Commands</a></div></td>
+          <td width="27%"><div align="center"><a href="highlevel.htm">Highlevel Commands </a></div></td>
+          <td width="15%"><div align="center"><a href="properties.htm">Properties</a></div></td>
+          <td width="15%"><div align="center"><a href="examples.htm">Examples</a></div></td>
+        </tr>
+      </table>      
+      </div>
+      <blockquote>
+        <div align="justify">
+          <p> These functions may be used for shooting:</p>
+          <p><strong>SetEnemiesPriority ( equation )</strong> - the function sets priorities to all known waypoints according to an equation it has been given as an argument. In this equation you may use <a href="properties.htm">any properties </a>, integer numbers, operators +,-,*,/, and also brackets.</p>
+          <blockquote>
+            <p>Example: SetEnemiesPriority ( Enemies.HealthMax - Enemy.Health ). Each enemy this way will get as a priority the difference between the health of the strongest robot and the the health of the current one. So the weakest enemy will receive the highest priority. </p>
+          </blockquote>
+          <p><strong>GetTarget</strong> - this function chooses an enemy with the highest priority and sets it as a target. </p>
+          <p><strong>Shoot</strong> - Robot shoots the current target, it's turn ends.</p>
+          <p>&nbsp;</p>
+        </div>
+      </blockquote>        </td>
+  </tr>
+</table>
+</body>
+</html>

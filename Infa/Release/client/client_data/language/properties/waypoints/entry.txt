@@ -1,0 +1,7 @@
+.MinDist
+.MaxDist
+.AvgDist
+.MinNewDist
+.MaxNewDist
+.AvgNewDist
+.Number

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+<table width="95%" border="1" align="center">
+  <tr>
+    <td colspan="4">      <h3 align="center">Waypoints</h3></td></tr>
+  <tr>
+    <td><div align="center"><a href="general.htm">What is NPRG?</a></div></td>
+    <td><div align="center"><a href="control.htm">Controlling your robot</a></div></td>
+    <td><div align="center"><a href="language.htm">Language overview</a></div></td>
+  </tr>
+  <tr>
+    <td colspan="4"><div align="center">
+      <p>&nbsp;</p>
+      <table width="100%" border="0">
+        <tr>
+          <td width="16%"><div align="center"><a href="statements.htm">Conditions</a></div></td>
+          <td width="27%"><div align="center"><a href="lowlevel.htm">Lowlevel Commands</a></div></td>
+          <td width="27%"><div align="center"><a href="highlevel.htm">Highlevel Commands </a></div></td>
+          <td width="15%"><div align="center"><a href="properties.htm">Properties</a></div></td>
+          <td width="15%"><div align="center"><a href="examples.htm">Examples</a></div></td>
+        </tr>
+      </table>      
+      </div>
+      <blockquote>
+        <div align="justify">
+          <p>What is a  waypoint? In this case waypoint means an entrance into an unexplored corridor. In other words it is such a known cell within the robot's reach which has at least one unexplored cell next to it. A robot remembers the list of such cells and renews it on every turn. We may assign waypoint`s priorities according to some logic and then choose the waypoint with the highest priority and head towards it. These are the functions for working with the waypoints:</p>
+          <p><strong>IsDefinedWaypoint</strong> - this function returns <strong>true</strong> if a robot already has an active waypoint and it still has not reached it. In any other case the function returns <strong>false</strong>. This function is useful if you don't want to take any other actions before you reach a waypoint you have once defined as active.</p>
+          <p><strong>SetWaypointsPriority ( equation )</strong> - the function sets priorities to all known waypoints according to an equation it has been given as an argument. In this equation you may use <a href="properties.htm">any properties </a>, integer numbers, operators +,-,*,/, and also brackets.</p>
+          <blockquote>
+            <p>Example: SetWaypointsPriority ( Waypoints.MaxDist - Waypoint.Distance ). Each waypoint this way will get as a priority the difference between the distance toward the farthest waypoint and the distance toward the current one. So the closest waypoint will receive the highest priority. </p>
+          </blockquote>
+          <p><strong>GetWaypoint</strong> - this function chooses a waypoint with the highest priority and defines it as active. </p>
+          <p><strong>GoToWaypoint</strong> - makes robot step toward the waypoint which was defined as active.
+          </p>
+          <p>&nbsp;</p>
+        </div>
+      </blockquote>        </td>
+  </tr>
+</table>
+</body>
+</html>

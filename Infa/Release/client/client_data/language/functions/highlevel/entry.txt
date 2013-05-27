@@ -1,0 +1,6 @@
+SetWaypointsPriority(equation)
+GetWaypoint
+GoToWaypoint
+SetEnemiesPriority(equation)
+GetTarget
+Shoot
